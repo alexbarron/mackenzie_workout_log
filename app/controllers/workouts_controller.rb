@@ -17,7 +17,7 @@ class WorkoutsController < ApplicationController
 		if @workout.save
 			redirect_to @workout
 		else
-			render 'New'
+			render 'new'
 		end
 	end
 
@@ -29,7 +29,7 @@ class WorkoutsController < ApplicationController
 		if @workout.update(workout_params)
 			redirect_to @workout
 		else
-			render 'Edit'
+			render 'edit'
 		end
 	end
 
